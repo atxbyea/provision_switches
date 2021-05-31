@@ -24,8 +24,8 @@ from homeassistant.const import (
 async def async_setup_entry(hass, config_entry,async_add_entities):
     """Set up the sensor platform."""
     LOGGER.info('SETUP_ENTRY')
-    #username=config_entry.data.get(CONF_USERNAME)
-    #password=config_entry.data.get(CONF_PASSWORD)
+    username=config_entry.data.get(CONF_USERNAME)
+    password=config_entry.data.get(CONF_PASSWORD)
     ipaddress=config_entry.data.get(CONF_IP_ADDRESS)
     updateIntervalSeconds=config_entry.options.get(CONF_SCAN_INTERVAL)
     maxretries=3
@@ -198,9 +198,9 @@ class SnmpStatisticsMonitor:
             ],hlapi.CommunityData('public'))
         
         
-        #cpu usage://1.3.6.1.2.1.25.3.3[.1...4]
+        #cpu usage://1.3.6.1.4.1.11.2.14.11.5.1.9.6.1
         cpu_usages= __class__.get_bulk(self.target_ip, [
-            '1.3.6.1.2.1.25.3.3',
+            '1.3.6.1.4.1.11.2.14.11.5.1.9.6.1',
         ], hlapi.CommunityData('public', mpModel=1), 
             32 
         )
