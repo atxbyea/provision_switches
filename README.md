@@ -1,21 +1,16 @@
-# ha_snmp_stats
-Homeassistant integration to show some stats from snmp
-netif - bandwidth
-netif - total traffic
-cpu load averages (1/2/3)
-..more to come
-
+# Provision Switches
+My first attempt at creating a custom integration.
+For reading certain SNMP stats to sensors in Home Assistant
+Forked from @waltmeyer as it looked like a good base.
 ### Tested working with ###
-* opnsense 20
-* openWRT
-
+* 2530
 
 ### Important: ###
 Set the update interval in the Integration Settings. Default is 1 second, which may kill your recorder database
 
 ### Install ###
-Easiest way is to add this repository to hacs.
+HACS information coming
 
 
 ### Screenshots :) ###
-comming sometime...
+Will follow
