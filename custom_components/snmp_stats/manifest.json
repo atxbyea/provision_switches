@@ -1,9 +1,9 @@
 {
-    "domain": "snmp_stats",
-    "name": "snmp_stats",
-    "documentation": "https://www.weltmeyer.net",
+    "domain": "provision_switches",
+    "name": "Provision Swtches",
+    "documentation": "https://github.com/atxbyea/provision_switches",
     "dependencies": [],
-    "codeowners": ["@weltmeyer"],
+    "codeowners": ["@weltmeyer", "atxbyea"],
     "requirements": ["pysnmp"],
     "config_flow": true
 }
